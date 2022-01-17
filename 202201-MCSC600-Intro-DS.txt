@@ -1,0 +1,40 @@
+Intro to Data Science
+Notes
+
+20220116
+	Week 1 Presentation
+		People / Directory of Names
+		Much time is spent just cleaning data
+		DS Process
+			Ask, Get, Explore, Model, Communicate
+		Most Popular Languages
+			Python, SQL, R
+	Week 1 Reading
+		Python Data Science Essentials,
+			Sections:
+				First Steps (“First Steps” through “Alternatives to Jupyter”)
+				Strengthen Your Python Foundations (“Strengthen your Python Foundations” through “Don’t be shy, take a real challenge”)
+		Python for Data Science for Dummies
+			Sections:
+				Ch. 1 and 2
+		Python Data Science Essentials
+			First Steps
+				Data Science is:
+					linear algebra, 
+					statistical modeling, 
+					visualization, 
+					computational linguistics, 
+					graph analysis, 
+					machine learning, 
+					business intelligence, 
+					and data storage and retrieval.
+				Python is awesome, basically
+				The rest of First Steps was just setup, installing everything on Windows
+				Getting jupyter setup
+		PfDSfD
+			Ch 1
+				Data Science is:
+					Data Capture
+					Data Analysis
+					Presentation
+		

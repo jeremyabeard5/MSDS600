@@ -3,8 +3,11 @@ Notes
 
 20220116
 	Week 1 Presentation
+		
 		People / Directory of Names
 		Much time is spent just cleaning data
+		Big Data
+			Volume(size), Variety(type), Velocity(how fast updated)
 		DS Process
 			Ask, Get, Explore, Model, Communicate
 		Most Popular Languages
@@ -37,4 +40,78 @@ Notes
 					Data Capture
 					Data Analysis
 					Presentation
+				
+		
+
+
+
+20220121 Friday
+	Week 2 
+		Even if data sets are different, processing is the same
+			Data Acquisition
+			Data Extraction
+			Data Preprocessing
+			Data Analysis
+			Data Presentation
+		Most data scientists spend 75-90% time cleaning data
+		Data Preparation, Part Of :
+			Business understanding
+			Data understanding
+				EDA, visualization
+			Data Preparation
+			Modeling
+			Evaluation
+			Deployment
+		FINDING Outlier Boundary
+			Upper Boundary = Q3 + 1.5*IQR
+			Lower = Q1 - 1.5*IQR
+		Dealing With Outliers
+	Week 2 Reading
+		Data Science With Python, Chapter 1
+			Introduction
+				Data is all around us
+				Machine Learning: computers accomplishing tasks without human intervention using statistics and pattern recognition
+			Python Libraries: pandas, Matplotlib, Seaborn, and scikit-learn
+				Pandas: open-sources, loading/processing data, analysing/manipulating data, csv is popular
+				Numpy: Main python data science package, used with scientific computing and working on mathematical operations, working with arrays
+				Matplotlib: data visualization package, uses numpy, 2d visualization
+				Seaborn: data visualization based on matplotlib, more attractive graphics
+				scikit-learn: Python package for machine learning
+			Building Machine Learning Models
+				Data Pre-processing
+					cleaning
+					most important step
+				Model Learning
+					models: using methods to find patterns and make prediction. algorithms can be supervised, semisupervised, unsupervised, and reinforcement learning
+				Model Evaluation
+					using performance metrics, models are tuned
+				Prediction
+					after happy with evaluation, start prediction, helping decision makers
+				Model Deployment
+					some report, model, management, maintenance
+				******this chapter focuses on pre-processing***
+			Data Representation
+				csv
+				pandas loads data into dataframes
+				DataFrame variables can be classified in 2 categories: independent variables and dependent(target) variables
+				Single Data: Scalar
+				Group of Scalars: Vector
+				Group of Vectors: Matrix
+			Data Categories
+				Numerical vs. Categorical
+					Numerical: ###'s
+					Categorial: string or non-numerical
+				Discrete vs. Continuous
+					Discrete: ints
+					Continuous: floats
+				Ordered vs. Nominal
+					Nominal: not ordered
+			Then a bunch of Jupyter notebook stuff - DataSciencewithPython-Chapter1.ipynb
+		Python for Data Science for Dummies, Chapter 5
+			Understanding the Tools
+				Learning anaconda/ipython help
+				Learned how to change from 'Code' to 'Markdown' in Jupyter
+			
+				
+					
 		

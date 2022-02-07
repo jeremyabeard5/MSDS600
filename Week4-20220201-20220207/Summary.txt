@@ -1,0 +1,28 @@
+imported dataset clean_churn_data
+targets: churn
+features: all but churn and customer ID (categorical)
+created train and test set (used default as 25% test size)
+fit the training data to a decision tree classifier
+	depth is 26, wayyyy too cluttered
+	default accuracy
+		train: 0.9936
+		test: 0.7257
+reduced the depth based on the depth value outputted by the for-loop which iterates thru depth
+	optimal depth of decision tree was 4
+	new accuracy:
+		train: 0.7942
+		test: 0.7842
+plotted new decision tree with depth 4
+plotted pearson correlation between all features and target
+created randomforestclassifier
+	used 2 for-loops to optimize max_depth and max_features (depth 7 and max features as default)
+	New accuracy:
+		train: 0.8241
+		test: 0.7961
+plotted the feature importance
+dropped 'tenure', 'paymentmethod', and'phoneservice' from features as they had negative correlation
+	New accuracy:
+		train: 0.8097
+		test: 0.7871
+	re-computed optimal max depth and max features (6 and 2)
+	re-plotted feature importance

@@ -367,10 +367,89 @@ Notes
 					Can integrate model into software system
 				CORRECTION
 					changing "brief summary writeup" section , 91% accur on TEST data, not training
-							
-					
-				
 		Week 3 Reading
+		
+		
+		
+		
+		
+		
+20220206 Sunday
+	Week 4: Decision Trees (Tree-based ML and Feature Selection
+		FTE PDF - Week 4
+			Decision Trees: split data into groups automatically based on features which give the best split between classes
+				Try different features and different splits, then calculate purity of splitting categories (Gini impurity or entropy)
+				Majority class in each leaf is the prediction
+				Data does not need to be scaled (unlike distance-based algos like KNN and other algos like neural networks)
+				Prone to overfitting (high variance)
+			Gini criterion = Gini impurity = Gini index
+				Gini = 1 - SUM(p^2)
+			Entropy
+				Slightly more complex than Gini
+				Minimum (best) is 0, when the samples in a leaf node are all one class
+				Entropy = -1 * SUM(p_j * log_2 * p_j)
+			Regression 
+				Most ML algorithms in sklearn have a regression component
+					Example: DecisionTreeClassifier has DecisionTreeRegressor
+				Uses different criterion than what we've seen so far 
+				Instead of Gini or Entropy, these use things like MSE (mean squared error)
+					MSE: takes difference between each prediction and actual, squares it, then sums it
+				Counterpart to logistic regression = linear regression
+			Random Forests
+				Random Forests: takes many decision trees and average their predictions to get final prediction
+				Sample datapoint from entire dataset, enough times that we have same # in sample as original
+				BOTH a classifier and a regressor random forest class in sklearn
+				Do that for a specific number of trees
+			Feature Importances
+				Curse of Dimensionality: as we add more features, we need exponentially increasing numbers of datapoints
+					Solution: collect more data or remove some features
+					Too many features = poor performance of ML algorithms (overfitting or underfitting)
+				Picking the best features
+					Univariate statistics (correlation, mutual information score, chi2 score, etc)
+					Forward and backward selection with ML algos: add/subtract features until we have good performance and minimal features
+					Recursive: same as forward/backward but trying all features
+					Feature importance methods: rank features based on importance (Gini or entropy gain for trees)
+			Pearson Correlation
+				Measures linear relationship strength between two variables
+				-1 to +1, with 0 being no correlation and -1 and +1 being perfect correlation
+				Formula
+					r = Sum((x_i - x_bar)(y_i - y_bar)) / Sqrt(SUM((x_i-x_bar)^2) * SUM((y_i-y_bar)^2))
+			Phi-K Correlation
+				Newer version of correlation
+				Bins numeric groups into categories and uses chi-2 correlation
+		Video Lectures - Week 3
+			Review from last week
+				Different Types of Machine Learning
+					Supervised
+					Unsupervised
+					Reinforcement
+					Semi-supervised
+				Hi Bias vs. Hi Variance: Hi Bias=linear fit, high error, Hi Variance=too specific
+				Logistic regression: simple model for binary classification
+			This Week: decision trees as machine learning algo
+			Decision Tree
+				Goal: get all no-diabetes on one side and all diabetes on the other side
+				Each node: value=diabetes vs. no-diabetes #'s, adds up to samples
+				Prone to overfitting
+			Gini Criterion
+				"1 minus the sum of probility squared over all classes"
+			Entropy
+				Also called "information gain"
+				Minimum: 0. That's best, when there's only one class in a node
+			Regression
+				MSE: mean squared error = SUM(differences^2)
+			Random Forests: collection of decision trees
+				Each decision tree is a bit different
+				All DT's make their prediction
+				Average all predictions (or combine in some way) to get final prediction
+				Each split uses subset of the features (can be randomly chosen) to see which features give the best split
+				Can set # of trees we want
+				Random forests usually outperform decision trees
+				Random forests are easy to parallelize
+		VIDEO 1
+		Week 4 Reading
+		
+
 			
 				
 					

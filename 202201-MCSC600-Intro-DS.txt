@@ -446,11 +446,87 @@ Notes
 				Can set # of trees we want
 				Random forests usually outperform decision trees
 				Random forests are easy to parallelize
-		VIDEO 1
+			Feature importance
+				Need to shrink features so the ML algorithm can perform well
+				"as we increase the # of features, we need to have an exponentially increasing # of data points"
+				Line vs. Square vs. Cube 
+				Rank features in order of importance (can use Gini index (whichever feature gives us biggest increase in impurity of split) )
+			Pearson correlation
+				Measures correlation between 2 variables
+			Phi-k correlation
+				Non-linear correlation
+				Invented in 2018
+				Bins up numerical variables into groups to make them categorical, calculates chi-squared
+		VIDEO - FTE - Week 4
+			xgboost has done really well, won competitions
+			1. Decision Trees
+			2. Selecting features
+			Split between features and targets stratifying based on targets to keep an equal balance between the 2 classes on the train and test sets
+			Using DecisionTreeClassifier
+				initalize model
+				fit model to training features and targets
+				then evaluate performance on train and test sets
+				100% accuracy on train vs. 80% on test, means OVERFITTING
+			Make empty matplotlib figure, plot decision tree, "filled=true" means color
+			Tree is pretty deep (7 splits)
+				with each split, it has potential to double the number of nodes
+				Gini=0 means all samples are of one class
+				Leaf nodes only have 1, 2 samples in em = BAD = OVERFITTING
+			To offset deepness, set depth of tree
+				Play with max_depth to see how it changes things
+			Using RandomForestClassifier
+				play with max_features: # of features for each split that it tries to split the data with
+					by default, it's sqrt(# features)
+				GridSearchCV and Bayesian search are helpful for automatically reducing features
+			Feature Selection
+				df.corr() by default is Pearson correlation
+				Pearson: linear correlation, how much 2 variables move in the same direction
+					0 = no correlation
+			Feature Importance
+				using scikit-plot, plot_feature_importances
+				Feature importance calculates gini impurity to plot these
+			Using results from feature importance, drop 5 least important features, create new dataframe
+			
+				
+				
+					
+			
+				
 		Week 4 Reading
 		
 
 			
 				
 					
+20220211 Friday
+	Week 5: Automation and Data Science
+		FTE PDF
+		Video Lecture
+			Review from last week
+				Gini values, decision trees, random forests, feature selection, feature importance/removal
+			This week: Automation
+				Using python to run repetitive tasks
+			Can automate each step in the CRISP-DM process model. 
+			Automation Tools
+				auto EDA, auto ML, auto AI, autoDS
+				pandas-profiling, autovis, sweetvis
+			Auto-Modeling
+				Python: pycaret, TPOT, H20, etc
+				Cloud solutions: Azure, AWS, GCP, IBM Watson
+			Automation can help cross-validate models and try different samples, evaluate performance, etc
+			Data Science GUIs
+				Alteryx, Orange, RapidMiner, Cloud solutions (AWS, GCP), H20
+					No-code or low-code implementation
+					can be harder to customize, scale, integrate with other systems
+			Cloud Tools
+				Google Cloud (GCP) autoML suite - image, video text, tabular data
+				AWS - similar
+				Azure - a little behind GCP and AWS atm
+				IBM Watson - auto AI
+			Other automation ideas:
+				Linux cronjobs
+				Automated reporting: reportlab package in Python
+				Automated dashboarding
+		Video FTE Walkthrough
+		Reading
 		

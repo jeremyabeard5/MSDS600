@@ -1,0 +1,33 @@
+Week 6 Assignment Summary
+	To begin this assignment, I answered the question "how many movies has user 2 watched?". 
+	I did this by using the groupby function, counting the # of rows from each user. I saw that user 2 has watched 29 movies.
+	Or, user 2 has rated 29 movies at least. I then plotted a bar chart of user 2's movies.
+	I began the plotting by merging the movies and ratings dataset so I could access the movie titles.
+	I sorted the movies user 2 has watched based on rating, and used plot.bar to create the bar chart.
+	Filtering the movies to only see user 2's movies with 5.0 ratings, I saw that user 2's top movies 
+	were Step Brothers, Inside Job, Warrior, Wolf of Wall Street, Mad Max: Fury Road, and The Jinx.
+	
+	Next, I found the most similar users to user 2 and recommended a few movies to user 2
+	using the following 3 separate metrics: Pearson coefficient, cosine distance, and euclidean distance.
+	
+	Using the Pearson coefficient, I found user 341 to be most similar to user 2. 
+	To find the movies to recommend, I filtered the movies by movies which user 2 hadn't seen, and user 341 rated as 5.0.
+	These movies turned out to be "Toy Story" and "You Don't Mess with the Zohan". 
+	To see if these make sense, I didn't see any animated movies in user 2's top-rated movies. I saw
+	mostly popular drama/action movies in user 2's top movies. This was slightly peculiar to me.
+	
+	Using the cosine distance, I found user 442 to be most similar to user 2. However, user 442 had
+	very low ratings on all their movie ratings, so I moved to the next similar user. This was user 461.
+	Using user 461's top movies, I found "Forrest Gump", "Dead Poets Society", and "As Good as It Gets"
+	to be the top recommendations for user 2. These seemed to be much better recommendations for user 2
+	as they are all popular dramas.
+	
+	Using the euclidean distance as a metric, I found the same exact results as the cosine distance. 
+	The same users were the most similar (442, 461) and the same three movies were recommended.
+	
+	This assignment was interesting! And there were a lot of real-world applications for it. 
+	
+	Please let me know if you have any questions.
+	
+	Thank you,
+	Jeremy

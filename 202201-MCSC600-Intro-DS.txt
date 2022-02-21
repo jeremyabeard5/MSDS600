@@ -368,6 +368,35 @@ Notes
 				CORRECTION
 					changing "brief summary writeup" section , 91% accur on TEST data, not training
 		Week 3 Reading
+			Data Science with Python
+				Remainder of Ch 1 after Data Discretization + Ch 3
+					Ch. 3: Intro to ML via scikit-learn
+						sklearn has supervised and unsupervised ML algos
+						REGRESSION: a single dependent variable is predicted using one+ independent vars
+							Can be linear or logistic regression
+							LINEAR REGRESSION: draw straight line thru inputs that minimizes distance between line and inputs
+								SIMPLE and MULTIPLE
+								SIMPLE LINEAR REGRESSION: y=mx+b, only one mx
+									(see jupyter notebook examples in wk 3 folder)
+								MULTIPLE LINEAR REG: y=mx+mx+mx+b, multiple m's and x's (x1, x2...)
+							LOGISTIC REGRESSION: 
+								When dependent variable has only 2 outcomes, it is binary logistic regression
+									2+ = "multinomial logistic regression
+						Max Margin Classification Using SVMs (Support Vector Machine)
+							SVM: Algorithm for supervised learning, solves both classification and regression problems
+								Most commonly used in classification problems
+								Goal of SVM: determine best location of a 'hyperplane' that create a class boundary between 
+											data points plotted on a multidimensional space
+								Location of Hyperplane: position that creates max. separation between 2 classes
+									^^^Max. Margin Hyperplane (MMH)
+						Decision Trees
+							Use either gini impurity or entropy
+							Root node: feature that maximizes value indicating quality of a split
+								Then divided into next-most important feature, and so on
+								"divide and conquer"
+							
+					
+				Data Science for Dummies, 2nd Ed. Ch. 4
 		
 		
 		

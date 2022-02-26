@@ -395,8 +395,34 @@ Notes
 								Then divided into next-most important feature, and so on
 								"divide and conquer"
 							
+			Data Science for Dummies, 2nd Ed. Ch. 4
+				Chapter 4: Machine Learning
+					ML: applying algo's to data in an iterative manner, so cpu discovers hidden patterns/trends
+					3 Main Steps in ML:
+						Setting Up
+							Acquiring data
+							Preprocessing
+							Feature Selection
+						Learning
+							Model Experimentation
+							Training
+							Building
+							Testing
+						Application
+							Model Deployment
+							Prediction
+					Good rule of thumb: use 2/3 of dataset as data to train, use 1/3 as test data
+					Feature: Independent Variable
+					Target: Dependent Variable
+					Feature selection: selecting appropriate variables
+					Supervised:
+						example: logistic regression
+					Unsupervised:
+						example: k-means clustering
+					Reinforcement
 					
-				Data Science for Dummies, 2nd Ed. Ch. 4
+						
+					
 		
 		
 		
@@ -559,3 +585,75 @@ Notes
 		Video FTE Walkthrough
 		Reading
 		
+		
+		
+		
+		
+		
+		
+		
+20220220 Sunday
+	Week 6: Recommender Systems: Recommending items for users
+		FTE PDF
+		Video Lecture
+			Last week: pycaret, python scripting, automation, data science GUIs
+			This week: distance calcs for similarity, recommender systems, big data, graph analysis
+			Types of Recommender Systems
+				Content-based filtering vs. Collaborative Filtering
+					Content-based: user's preferences, item details (how user rated items they bought)
+						Based on only users' previous actions (community data not used)
+					Collaborative Filtering: making recommendations based on patterns for groups of users (age, gender, geo, occupation)
+						Hard to make recommendations for new users
+						People are bad at rating
+					Hybrid
+			Where Recommenders are Used
+				E-Commerce, movies/shows/audio, social media, news articles, any match between person-item
+			Matrix Factorization
+				Used for collaborative filtering
+				Have R matrix of users (rows) and items (columns), with entries as ratings
+				Break up into 2 matrices
+				k (rank) is # of dimensions that the matrices have 
+			PCA: Principle Component Analysis
+				The way that the matrix is divided by
+			ALS (Alternating Least Squares)
+				Break up matrix into 2 matrices
+				Minimize the cost function, minimize squared difference between real matrix and approximation
+				Add penalty term to reduce over-fitting
+			SVD: Singular Value Decomposition
+				Breaking matrix up into 3 matrices
+			Evaluation Metrics
+				Root mean square error
+				Confusion matrix (true positives, false positives, etc)
+			Similarity Metrics in Collaborative Filtering
+				Finding similar users
+				Euclidean distance, cosine distance, pearson coefficient, KNN (kinda like euclidean distance)
+			Python Recommender Packages
+				Surprise
+				Lightfm
+				Turi create
+				pyspark
+			Big Data: scaling up (bigger single machine) or out (parallelize, use a cluster)
+			Graph Theory
+				Represents connected networks, connecting nodes/vertices, can be directed (arrows) graph or undirected (no arrows) 
+				Python package: networkx
+				
+		Video FTE Walkthrough
+		Reading
+		
+		
+		
+		
+		
+		
+		
+20220225 Friday
+	Week 7: Collecting Social Media Data
+		PDF
+		Video Lecture
+			APIs, SDKs, etc
+			SQL
+			We will use SQLite
+			SQL databases typically organized into databases, tables, columns
+			SQL commands and queries follow a patttern:
+				Primary command, different options, etc.
+			Our plan: collect data from Reddit API using PRAW Python Package

@@ -1,0 +1,3 @@
+user agent: jb_redkey
+client id: AkF_xSl2q2ddUTFd67qN1w
+Client secret: -P5crX66g3bozua2N-JbMQ4mX5xBRQ

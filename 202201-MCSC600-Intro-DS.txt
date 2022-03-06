@@ -657,3 +657,16 @@ Notes
 			SQL commands and queries follow a patttern:
 				Primary command, different options, etc.
 			Our plan: collect data from Reddit API using PRAW Python Package
+			
+			
+20220305 Saturday
+	Week 8: Social Media Data and Sentiment Analysis
+		Video Leceture
+			Sentiment Analysis: part of natural language processing (way for cpus to understand human language [chat bots, translation, etc])
+			Natural Language Processing tends to use neural networks
+			Sentiment Analysis: measures the positivity and negativity of text
+				quantified often from -1 to +1, with 0=neutral
+				strategies:
+					keyword analysis: match words to + ot - scores from a dictionary
+					machine learning: train a classifier on text features
+					rule-based: combine keywords with rules
